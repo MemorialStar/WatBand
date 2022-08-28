@@ -4,13 +4,12 @@ Bluetooth::Bluetooth(char* localName)
 {
     _localName = localName;
     _Service(uuidService);
-    BLEUnsignedCharCharacteristic _charGyroX(&uuidGyroX, BLERead | BLENotify | BLEBroadcast);
-    BLEUnsignedCharCharacteristic _charGyroY(&uuidGyroY, BLERead | BLENotify | BLEBroadcast);
-    BLEUnsignedCharCharacteristic _charGyroZ(&uuidGyroZ, BLERead | BLENotify | BLEBroadcast);
-    BLEUnsignedCharCharacteristic _charCo(&uuidCo, BLERead | BLENotify | BLEBroadcast);
-    BLEUnsignedCharCharacteristic _charEcg(&uuidEcg, BLERead | BLENotify | BLEBroadcast);
-    BLEUnsignedCharCharacteristic _charBattery(&uuidBattery, BLERead | BLENotify | BLEBroadcast);
-
+    BLEUnsignedCharCharacteristic _charGyroX(uuidGyroX, BLERead | BLENotify | BLEBroadcast);
+    BLEUnsignedCharCharacteristic _charGyroY(uuidGyroY, BLERead | BLENotify | BLEBroadcast);
+    BLEUnsignedCharCharacteristic _charGyroZ(uuidGyroZ, BLERead | BLENotify | BLEBroadcast);
+    BLEUnsignedCharCharacteristic _charCo(uuidCo, BLERead | BLENotify | BLEBroadcast);
+    BLEUnsignedCharCharacteristic _charEcg(uuidEcg, BLERead | BLENotify | BLEBroadcast);
+    BLEUnsignedCharCharacteristic _charBattery(uuidBattery, BLERead | BLENotify | BLEBroadcast);
 }
 
 void Bluetooth::begin(){

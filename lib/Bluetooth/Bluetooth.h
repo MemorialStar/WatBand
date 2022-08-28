@@ -2,9 +2,9 @@
 #ifndef _Bluetooth_H_
 #define _Bluetooth_H_
 
-static const int WRITE_BUFFER_SIZE =              256;
-static const bool WRITE_BUFFER_FIZED_LENGTH =      false;
-static const char16_t *uuidService =                   u"1A01";
+static const int WRITE_BUFFER_SIZE =                   256;
+static const bool WRITE_BUFFER_FIZED_LENGTH =          false;
+static const std::string uuidService =                 "1A01";
 static const char16_t *uuidGyroX =                     u"2A01";
 static const char16_t *uuidGyroY =                     u"2A02";
 static const char16_t *uuidGyroZ =                     u"2A03";
